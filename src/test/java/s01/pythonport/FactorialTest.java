@@ -13,7 +13,6 @@ public class FactorialTest {
 
     @Test
     void factorialExceedingIntMaxValue() {
-        // 13! = 6,227,020,800 > Integer.MAX_VALUE (2,147,483,647)
         // Would overflow if factorial used int instead of long
         assertEquals(6227020800L, Factorial.factorial(13));
     }
